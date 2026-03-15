@@ -7,10 +7,7 @@ function Quote() {
       className="relative flex min-h-[92vh] flex-col items-center justify-center border-b border-white/10 text-center"
     >
       <div className="signal-pill absolute left-0 top-14 hidden rounded-full border border-white/10 bg-white/[0.045] px-5 py-3 text-left backdrop-blur-md lg:block">
-        <p className="text-[10px] uppercase tracking-[0.34em] text-white/38">
-          Deep Space / Signal
-        </p>
-        <p className="mt-2 font-display text-sm uppercase tracking-[0.26em] text-white/82">
+        <p className="font-display text-sm uppercase tracking-[0.26em] text-white/82">
           Embedded Systems and Firmware
         </p>
       </div>
@@ -36,16 +33,6 @@ function Quote() {
         <span>Scroll to enter</span>
         <span className="h-14 w-px bg-white/30" />
       </motion.div>
-
-      <div className="absolute bottom-10 right-0 hidden max-w-xs text-right lg:block">
-        <p className="text-[10px] uppercase tracking-[0.34em] text-white/28">
-          Atmospheric Note
-        </p>
-        <p className="mt-3 text-sm leading-7 text-white/42">
-          Systems-focused engineering shaped by firmware work, Android
-          implementation, research, and industrial problem solving.
-        </p>
-      </div>
     </section>
   );
 }

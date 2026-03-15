@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 const items = [
   {
     period: "Oct 2025 - Present",
-    role: "Android Development",
+    role: "Senior Software Engineer - Android Development",
     company: "HCL Technologies - Xerox Project",
     description:
       "Working on bug fixes and feature implementation for Xerox kiosk workflows while collaborating through Git-based branching, merging, pull requests, and integration practices.",
