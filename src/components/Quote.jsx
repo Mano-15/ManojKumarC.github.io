@@ -11,7 +11,7 @@ function Quote() {
           Deep Space / Signal
         </p>
         <p className="mt-2 font-display text-sm uppercase tracking-[0.26em] text-white/82">
-          Minimal Android Systems
+          Embedded Systems and Firmware
         </p>
       </div>
       <div className="black-hole-halo pointer-events-none absolute right-[-21%] top-1/2 hidden h-[42rem] w-[42rem] -translate-y-1/2 rounded-full lg:block" />
@@ -23,9 +23,9 @@ function Quote() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
       >
-        Make it simple,
+        Build it robust,
         <br />
-        but significant.
+        then make it useful.
       </motion.p>
       <motion.div
         className="relative z-10 mt-16 flex flex-col items-center gap-3 text-xs uppercase tracking-[0.35em] text-white/48"
@@ -42,8 +42,8 @@ function Quote() {
           Atmospheric Note
         </p>
         <p className="mt-3 text-sm leading-7 text-white/42">
-          A quiet visual field inspired by orbital drift, lensing light, and
-          minimal interface design.
+          Systems-focused engineering shaped by firmware work, Android
+          implementation, research, and industrial problem solving.
         </p>
       </div>
     </section>

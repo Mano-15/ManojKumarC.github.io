@@ -3,9 +3,13 @@ import Reveal from "./Reveal";
 import SectionTitle from "./SectionTitle";
 
 const links = [
-  { label: "Email", value: "manoj@example.com", href: "mailto:manoj@example.com" },
-  { label: "GitHub", value: "github.com/manoj15u24", href: "https://github.com/manoj15u24" },
-  { label: "LinkedIn", value: "linkedin.com/in/manoj", href: "https://linkedin.com/in/manoj" },
+  {
+    label: "Email",
+    value: "cmanoj15122003@gmail.com",
+    href: "mailto:cmanoj15122003@gmail.com",
+  },
+  { label: "Phone", value: "6374281071", href: "tel:+916374281071" },
+  { label: "Focus", value: "Firmware and Android", href: "#experience" },
 ];
 
 function Contact() {
@@ -14,7 +18,7 @@ function Contact() {
       <Reveal>
         <SectionTitle
           title="Contact"
-          subtitle="If the work feels aligned, let’s build something sharp and useful."
+          subtitle="If the work feels aligned, let's connect."
         />
       </Reveal>
 
@@ -22,12 +26,13 @@ function Contact() {
         <Reveal>
           <div>
             <p className="max-w-2xl font-serif text-4xl leading-tight text-white sm:text-6xl">
-              Open to Android roles, freelance builds, and product
-              collaboration.
+              Open to software, embedded systems, firmware, and Android
+              engineering opportunities.
             </p>
             <p className="mt-6 max-w-xl text-sm leading-7 text-white/48">
-              Available for product teams that care about shipping polished
-              software with clear structure and calm interaction design.
+              Available for teams working on operating systems, firmware,
+              industrial software, and product engineering that values rigorous
+              implementation and collaborative delivery.
             </p>
           </div>
         </Reveal>

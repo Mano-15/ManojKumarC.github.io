@@ -4,22 +4,22 @@ import SectionTitle from "./SectionTitle";
 
 const projects = [
   {
-    title: "Printer Utility",
-    category: "Android Tool",
+    title: "Wireless Servosystem for AC and DC Machines",
+    category: "Final Year Project",
     description:
-      "A focused utility app for printer workflows, device communication, and fast operator actions.",
+      "Designed an embedded servo system with capacitive touch support for wireless control of AC and DC machines, with real-time machine analysis for operator communication.",
   },
   {
-    title: "Compose Demo",
-    category: "UI System",
+    title: "Intel BIOS Porting",
+    category: "Industry Project",
     description:
-      "Reusable Jetpack Compose patterns for clean layouts, transitions, and scalable screen structure.",
+      "Executed open-source Intel BIOS porting to device-specific firmware during internship work, building practical experience in BIOS configuration and low-level customization.",
   },
   {
-    title: "Task Flow",
-    category: "Productivity",
+    title: "Research and Publications",
+    category: "IEEE / ICPECTS",
     description:
-      "A minimal task experience built around strong information hierarchy and distraction-free interaction.",
+      "Presented and published work on wireless servo systems, and co-authored research on cascaded neural network control for electric vehicle energy management.",
   },
 ];
 
@@ -29,7 +29,7 @@ function Projects() {
       <Reveal>
         <SectionTitle
           title="Selected projects"
-          subtitle="A small set of builds focused on clarity, utility, and polished motion."
+          subtitle="Project work spanning embedded systems, firmware adaptation, and published engineering research."
         />
       </Reveal>
 
@@ -57,9 +57,9 @@ function Projects() {
               </div>
 
               <div className="mt-12 flex items-center justify-between border-t border-white/10 pt-5">
-                <span className="text-sm text-white">View concept</span>
+                <span className="text-sm text-white">Resume highlight</span>
                 <span className="text-xl text-cyan-200/80 transition-transform duration-300 group-hover:translate-x-1">
-                  →
+                  -&gt;
                 </span>
               </div>
             </motion.article>

@@ -3,18 +3,25 @@ import SectionTitle from "./SectionTitle";
 
 const items = [
   {
-    period: "2024 - Present",
-    role: "Android Developer",
-    company: "Current Focus",
+    period: "Oct 2025 - Present",
+    role: "Android Development",
+    company: "HCL Technologies - Xerox Project",
     description:
-      "Building Android products with an emphasis on maintainable architecture, Compose UI, and reliable release quality.",
+      "Working on bug fixes and feature implementation for Xerox kiosk workflows while collaborating through Git-based branching, merging, pull requests, and integration practices.",
   },
   {
-    period: "2023 - 2024",
-    role: "Mobile Engineer",
-    company: "Product Work",
+    period: "Aug 2025 - Oct 2025",
+    role: "Senior Software Engineer - OS Team",
+    company: "HCL Technologies - Xerox Project",
     description:
-      "Worked across feature delivery, UI refinement, API integration, and internal tooling for smoother user flows.",
+      "Handled defect consulting for upcoming software releases within the OS team and supported collaborative release work through structured Git workflows.",
+  },
+  {
+    period: "Internships",
+    role: "Firmware and Embedded Systems Internships",
+    company: "HCL Technologies, NSIC Technical Service Centre, IndFurr",
+    description:
+      "Completed industry internships in BIOS porting, low-level firmware customization, embedded systems, power electronics, and IoT-oriented industrial applications.",
   },
 ];
 
@@ -24,7 +31,7 @@ function Experience() {
       <Reveal>
         <SectionTitle
           title="Work experience"
-          subtitle="A concise view of the roles and product work shaping my Android practice."
+          subtitle="Industry roles and internships across operating systems, Android, firmware, and embedded systems."
         />
       </Reveal>
 
