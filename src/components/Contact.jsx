@@ -8,8 +8,26 @@ const links = [
     value: "cmanoj15122003@gmail.com",
     href: "mailto:cmanoj15122003@gmail.com",
   },
-  { label: "Phone", value: "6374281071", href: "tel:+916374281071" },
-  { label: "Focus", value: "Firmware and Android", href: "#experience" },
+  {
+    label: "GitHub",
+    value: "github.com/ManojKumarC-dev",
+    href: "https://github.com/ManojKumarC-dev",
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/manoj-kumar-c-b78a47224",
+    href: "https://www.linkedin.com/in/manoj-kumar-c-b78a47224",
+  },
+  {
+    label: "Instagram",
+    value: "@think_unique_03",
+    href: "https://www.instagram.com/think_unique_03?igsh=d3dta2EzYTJod3A4",
+  },
+  {
+    label: "ORCID",
+    value: "0009-0000-3349-6725",
+    href: "https://orcid.org/0009-0000-3349-6725",
+  },
 ];
 
 function Contact() {
