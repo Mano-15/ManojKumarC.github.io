@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Research and Publications",
-    category: "IEEE / ICPECTS",
+    category: "IEEE",
     description:
       "Presented and published work on wireless servo systems, and co-authored research on cascaded neural network control for electric vehicle energy management.",
   },
@@ -28,7 +28,7 @@ function Projects() {
     <section id="projects" className="border-b border-white/10 py-20 sm:py-28">
       <Reveal>
         <SectionTitle
-          title="Projects Worked"
+          title="Works"
           subtitle="Project work spanning embedded systems, firmware adaptation, and published engineering research."
         />
       </Reveal>
