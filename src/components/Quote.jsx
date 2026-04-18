@@ -8,7 +8,7 @@ function Quote() {
     >
       <div className="signal-pill absolute left-0 top-14 hidden rounded-full border border-white/10 bg-white/[0.045] px-5 py-3 text-left backdrop-blur-md lg:block">
         <p className="font-display text-sm uppercase tracking-[0.26em] text-white/82">
-          Embedded Systems and Android Developement
+          Embedded Systems and Android Development
         </p>
       </div>
       <div className="black-hole-halo pointer-events-none absolute right-[-21%] top-1/2 hidden h-[42rem] w-[42rem] -translate-y-1/2 rounded-full lg:block" />
