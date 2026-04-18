@@ -34,10 +34,7 @@ function Contact() {
   return (
     <section id="contact" className="py-20 sm:py-28">
       <Reveal>
-        <SectionTitle
-          title="Contact"
-          subtitle="If the work feels aligned, let's connect."
-        />
+        <SectionTitle title="Contact" />
       </Reveal>
 
       <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr]">
@@ -46,11 +43,6 @@ function Contact() {
             <p className="max-w-2xl font-serif text-4xl leading-tight text-white sm:text-6xl">
               Open to software, embedded systems, firmware, and Android
               engineering opportunities.
-            </p>
-            <p className="mt-6 max-w-xl text-sm leading-7 text-white/48">
-              Available for teams working on operating systems, firmware,
-              industrial software, and product engineering that values rigorous
-              implementation and collaborative delivery.
             </p>
           </div>
         </Reveal>

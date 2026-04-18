@@ -44,6 +44,9 @@ function App() {
         <Experience />
         <About />
         <Contact />
+        <footer className="border-t border-white/10 pt-10 text-center text-xs uppercase tracking-[0.28em] text-white/38">
+          Copyright 2026 Manoj Kumar C | Built with Codex
+        </footer>
       </main>
     </div>
   );
