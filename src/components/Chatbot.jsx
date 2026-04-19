@@ -3,6 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const chatEndpoint = "https://myself-backend.vercel.app/api/chat";
 
+const getModelName = (model) => {
+  if (!model) return "";
+  return model.split("/").pop();
+};
+
 function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
@@ -44,12 +49,12 @@ function Chatbot() {
         body: JSON.stringify({ message }),
       });
 
-      if (!response.ok) {
-        throw new Error("Chat request failed");
-      }
-
       const data = await response.json();
-      const reply = data?.reply || "I could not find a response for that.";
+      const reply =
+        data?.reply ||
+        (response.ok
+          ? "I could not find a response for that."
+          : "All free models are busy. Try again later.");
 
       setMessages((currentMessages) => [
         ...currentMessages,
@@ -57,6 +62,7 @@ function Chatbot() {
           id: `bot-${Date.now()}`,
           sender: "bot",
           text: reply,
+          model: data?.model,
         },
       ]);
     } catch (error) {
@@ -116,7 +122,12 @@ function Chatbot() {
                       : "self-start border border-white/10 bg-white/[0.07] text-white/72"
                   }`}
                 >
-                  {message.text}
+                  <p>{message.text}</p>
+                  {message.sender === "bot" && message.model ? (
+                    <p className="mt-2 border-t border-white/10 pt-2 text-[10px] uppercase tracking-[0.18em] text-cyan-100/40">
+                      Model: {getModelName(message.model)}
+                    </p>
+                  ) : null}
                 </div>
               ))}
 
