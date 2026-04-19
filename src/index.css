@@ -137,6 +137,26 @@ a {
   display: none;
 }
 
+.chat-messages-scroll {
+  overscroll-behavior: contain;
+  scrollbar-color: rgba(103, 232, 249, 0.45) rgba(255, 255, 255, 0.06);
+  scrollbar-width: thin;
+}
+
+.chat-messages-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-messages-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+}
+
+.chat-messages-scroll::-webkit-scrollbar-thumb {
+  background: rgba(103, 232, 249, 0.45);
+  border-radius: 999px;
+}
+
 @keyframes nebulaFloat {
   0% {
     transform: translate3d(0, 0, 0) scale(1);

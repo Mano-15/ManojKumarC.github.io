@@ -79,7 +79,8 @@ function Chatbot() {
         {isOpen ? (
           <motion.div
             id="portfolio-chatbot"
-            className="flex h-[28rem] w-[min(22rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-[1.6rem] border border-white/12 bg-[#070914]/95 text-white shadow-[0_24px_90px_rgba(0,0,0,0.45)] backdrop-blur-xl"
+            data-lenis-prevent
+            className="flex h-[28rem] min-h-0 w-[min(22rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-[1.6rem] border border-white/12 bg-[#070914]/95 text-white shadow-[0_24px_90px_rgba(0,0,0,0.45)] backdrop-blur-xl"
             initial={{ opacity: 0, y: 18, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 18, scale: 0.96 }}
@@ -96,7 +97,10 @@ function Chatbot() {
 
             <div
               ref={messagesRef}
-              className="no-scrollbar flex flex-1 flex-col gap-3 overflow-y-auto px-4 py-4"
+              data-lenis-prevent
+              onWheelCapture={(event) => event.stopPropagation()}
+              onTouchMoveCapture={(event) => event.stopPropagation()}
+              className="chat-messages-scroll flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto px-4 py-4"
             >
               {messages.map((message) => (
                 <div
